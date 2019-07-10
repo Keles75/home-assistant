@@ -67,7 +67,7 @@ def setup(hass, config):
         )
         hass.data[DOMAIN][host_name] = zm_client
 
-        success = zm_client.login() and success
+        success = zm_client.login()
 
     def set_active_state(call):
         """Set the ZoneMinder run state to the given state name."""
